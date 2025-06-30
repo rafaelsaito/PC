@@ -34,7 +34,7 @@ function draw() {
 function drawLabels() {
   fill(0);
   textSize(32);
-  text("🌾 Campo", 10, 30);
+  text("🌾 Campo", 5, 30);
   text("🏙️ Cidade", width - 160, 30);
 }
 
