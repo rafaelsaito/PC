@@ -1,6 +1,13 @@
 let trucks = [];
 let signals = [];
 
+
+function preload() {
+  campoImg = loadImage("campo.jpg")
+  campoImg = loadImage("cidade.jpg")
+
+}
+
 function setup() {
   const canvas = createCanvas(800, 400);
   canvas.parent("canvas-container");
