@@ -1,3 +1,4 @@
+let campoImg, cidadeImg;
 let trucks = [];
 let signals = [];
 
