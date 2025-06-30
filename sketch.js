@@ -59,7 +59,7 @@ class Truck {
     fill(255, 0, 0);
     rect(this.x, this.y, 70, 30);
     fill(0);
-    text("🚛", this.x + 6, this.y + 21);
+    text("🚛", this.x + 10, this.y + 23);
   }
 }
 
