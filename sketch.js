@@ -2,7 +2,6 @@ let campoImg, cidadeImg;
 let trucks = [];
 let signals = [];
 
-
 function preload() {
   campoImg = loadImage("campo.jpg");
   cidadeImg = loadImage("cidade.jpg");
@@ -16,8 +15,10 @@ function setup() {
 function draw() {
   background(220);
 
-  drawField();
-  drawCity();
+  image(campoImg, 0, 0, width / 2, height);
+  image(cidadeImg, width / 2, 0, width / 2, height);
+
+  drawLabels();
 
   for (let t of trucks) {
     t.move();
@@ -30,19 +31,10 @@ function draw() {
   }
 }
 
-function drawField() {
-  fill(100, 200, 100);
-  rect(0, 0, width / 2, height);
-  fill(0);
+function drawLabels() {
+  fill(255);
   textSize(16);
   text("🌾 Campo", 20, 30);
-}
-
-function drawCity() {
-  fill(180);
-  rect(width / 2, 0, width / 2, height);
-  fill(0);
-  textSize(16);
   text("🏙️ Cidade", width - 100, 30);
 }
 
@@ -53,6 +45,7 @@ function mousePressed() {
     signals.push(new Signal(mouseX, mouseY));
   }
 }
+
 
 class Truck {
   constructor(x, y) {
@@ -66,7 +59,6 @@ class Truck {
     fill(255, 0, 0);
     rect(this.x, this.y, 40, 20);
     fill(0);
-    textSize(14);
     text("🚛", this.x + 5, this.y + 15);
   }
 }
@@ -83,7 +75,6 @@ class Signal {
     fill(0, 0, 255);
     ellipse(this.x, this.y, 20);
     fill(255);
-    textSize(14);
     text("📶", this.x - 7, this.y + 5);
   }
 }
