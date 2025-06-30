@@ -34,7 +34,7 @@ function draw() {
 function drawLabels() {
   fill(0);
   textSize(32);
-  text("🌾 Campo", 15, 30);
+  text("🌾 Campo", 10, 30);
   text("🏙️ Cidade", width - 160, 30);
 }
 
@@ -59,7 +59,7 @@ class Truck {
     fill(255, 0, 0);
     rect(this.x, this.y, 70, 30);
     fill(0);
-    text("🚛", this.x + 5, this.y + 14);
+    text("🚛", this.x + 5, this.y + 20);
   }
 }
 
