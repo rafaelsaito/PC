@@ -57,9 +57,9 @@ class Truck {
   }
   display() {
     fill(255, 0, 0);
-    rect(this.x, this.y, 60, 30);
+    rect(this.x, this.y, 65, 30);
     fill(0);
-    text("🚛", this.x + 5, this.y + 15);
+    text("🚛", this.x + 5, this.y + 14);
   }
 }
 
@@ -73,8 +73,8 @@ class Signal {
   }
   display() {
     fill(0, 0, 255);
-    ellipse(this.x, this.y, 50);
+    ellipse(this.x, this.y, 40);
     fill(255);
-    text("📶", this.x - 7, this.y + 5);
+    text("📶", this.x - 8, this.y + 4);
   }
 }
