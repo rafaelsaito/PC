@@ -3,8 +3,8 @@ let signals = [];
 
 
 function preload() {
-  campoImg = loadImage("campo.jpg")
-  campoImg = loadImage("cidade.jpg")
+  campoImg = loadImage("campo.jpg");
+  campoImg = loadImage("cidade.jpg");
 
 }
 
