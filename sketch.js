@@ -34,8 +34,8 @@ function draw() {
 function drawLabels() {
   fill(0);
   textSize(32);
-  text("🌾 Campo", 20, 30);
-  text("🏙️ Cidade", width - 150, 30);
+  text("🌾 Campo", 15, 30);
+  text("🏙️ Cidade", width - 160, 30);
 }
 
 function mousePressed() {
@@ -57,7 +57,7 @@ class Truck {
   }
   display() {
     fill(255, 0, 0);
-    rect(this.x, this.y, 65, 30);
+    rect(this.x, this.y, 70, 30);
     fill(0);
     text("🚛", this.x + 5, this.y + 14);
   }
@@ -73,8 +73,8 @@ class Signal {
   }
   display() {
     fill(0, 0, 255);
-    ellipse(this.x, this.y, 40);
+    ellipse(this.x, this.y, 50);
     fill(255);
-    text("📶", this.x - 8, this.y + 4);
+    text("📶", this.x - 10, this.y + 4);
   }
 }
