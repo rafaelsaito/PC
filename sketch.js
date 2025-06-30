@@ -75,6 +75,6 @@ class Signal {
     fill(0, 0, 255);
     ellipse(this.x, this.y, 50);
     fill(255);
-    text("📶", this.x - 10, this.y + 4);
+    text("📶", this.x - 20, this.y + 4);
   }
 }
